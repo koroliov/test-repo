@@ -4,11 +4,35 @@ sidebar_position: 1
 
 # Tutorial Intro
 
+AAA foo bar
 Let's discover **Docusaurus in less than 5 minutes**.
 
 ## Getting Started
 
 Get started by **creating a new site**.
+
+```jsx live
+function Clock(props) {
+  const [date, setDate] = useState(new Date());
+  useEffect(() => {
+    const timerID = setInterval(() => tick(), 1000);
+
+    return function cleanup() {
+      clearInterval(timerID);
+    };
+  });
+
+  function tick() {
+    setDate(new Date());
+  }
+
+  return (
+    <div>
+      <h2>It is {date.toLocaleTimeString()}.</h2>
+    </div>
+  );
+}
+```
 
 Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
 
