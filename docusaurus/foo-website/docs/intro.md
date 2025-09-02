@@ -11,24 +11,15 @@ Let's discover **Docusaurus in less than 5 minutes**.
 
 Get started by **creating a new site**.
 
-```jsx live
+```js live
+
+import * as myModule from './dist/my-module.js';
+
 function Clock(props) {
-  const [date, setDate] = useState(new Date());
-  useEffect(() => {
-    const timerID = setInterval(() => tick(), 1000);
-
-    return function cleanup() {
-      clearInterval(timerID);
-    };
-  });
-
-  function tick() {
-    setDate(new Date());
-  }
 
   return (
     <div>
-      <h2>It is {date.toLocaleTimeString()}.</h2>
+      <h2>It is {myModule.someString}.</h2>
     </div>
   );
 }
