@@ -1,0 +1,11 @@
+"use strict";
+(self["webpackChunkfoo_website"] = self["webpackChunkfoo_website"] || []).push([[9775],{
+
+/***/ 9595:
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"tag":{"label":"Docusaurus","permalink":"/test-repo/blog/tags/docusaurus","description":"Docusaurus tag description","allTagsPath":"/test-repo/blog/tags","count":4,"unlisted":false},"listMetadata":{"permalink":"/test-repo/blog/tags/docusaurus","page":1,"postsPerPage":10,"totalPages":1,"totalCount":4,"blogDescription":"Blog","blogTitle":"Blog"}}');
+
+/***/ })
+
+}]);

@@ -1,0 +1,11 @@
+"use strict";
+(self["webpackChunkfoo_website"] = self["webpackChunkfoo_website"] || []).push([[2675],{
+
+/***/ 9203:
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"tag":{"label":"Facebook","permalink":"/test-repo/blog/tags/facebook","description":"Facebook tag description","allTagsPath":"/test-repo/blog/tags","count":1,"unlisted":false},"listMetadata":{"permalink":"/test-repo/blog/tags/facebook","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}}');
+
+/***/ })
+
+}]);
