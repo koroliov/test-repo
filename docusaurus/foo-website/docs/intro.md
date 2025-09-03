@@ -13,13 +13,13 @@ Get started by **creating a new site**.
 
 ```js live
 
-import * as myModule from './dist/my-module.js';
+//import * as myModule from './dist/my-module.js';
 
 function Clock(props) {
 
   return (
     <div>
-      <h2>It is {myModule.someString}.</h2>
+      <h2>It is fooBar.</h2>
     </div>
   );
 }

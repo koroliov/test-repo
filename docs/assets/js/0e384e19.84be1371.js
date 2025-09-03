@@ -92,7 +92,7 @@ function _createMdxContent(props) {
         className: "language-js",
         metastring: "live",
         live: true,
-        children: "\nimport * as myModule from './dist/my-module.js';\n\nfunction Clock(props) {\n\n  return (\n    <div>\n      <h2>It is {myModule.someString}.</h2>\n    </div>\n  );\n}\n"
+        children: "\n//import * as myModule from './dist/my-module.js';\n\nfunction Clock(props) {\n\n  return (\n    <div>\n      <h2>It is fooBar.</h2>\n    </div>\n  );\n}\n"
       })
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: ["Or ", (0,jsx_runtime.jsx)(_components.strong, {
