@@ -2,6 +2,8 @@
 sidebar_position: 1
 ---
 
+import LiveJsEditor from '@site/src/components/live-js-editor';
+
 # Tutorial Intro
 
 AAA foo bar
@@ -9,21 +11,18 @@ Let's discover **Docusaurus in less than 5 minutes**.
 
 ## Getting Started
 
-Get started by **creating a new site**.
+AAA_CODE_START
+<LiveJsEditor />
 
 ```js live
 
 //import * as myModule from './dist/my-module.js';
 
-function Clock(props) {
-
-  return (
-    <div>
-      <h2>It is fooBar.</h2>
-    </div>
-  );
-}
+//const div = document.createElement('div');
+//alert('AAA');
 ```
+
+AAA_CODE_END
 
 Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
 

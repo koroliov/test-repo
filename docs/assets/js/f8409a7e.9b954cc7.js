@@ -1,7 +1,7 @@
 "use strict";
-(self["webpackChunkfoo_website"] = self["webpackChunkfoo_website"] || []).push([[3976],{
+(self["webpackChunkfoo_website"] = self["webpackChunkfoo_website"] || []).push([[6903],{
 
-/***/ 2053:
+/***/ 7455:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 // ESM COMPAT FLAG
@@ -13,17 +13,19 @@ __webpack_require__.d(__webpack_exports__, {
   contentTitle: () => (/* binding */ contentTitle),
   "default": () => (/* binding */ MDXContent),
   frontMatter: () => (/* binding */ frontMatter),
-  metadata: () => (/* reexport */ site_docs_intro_md_0e3_namespaceObject),
+  metadata: () => (/* reexport */ site_docs_intro_mdx_f84_namespaceObject),
   toc: () => (/* binding */ toc)
 });
 
-;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-intro-md-0e3.json
-const site_docs_intro_md_0e3_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"intro","title":"Tutorial Intro","description":"AAA foo bar","source":"@site/docs/intro.md","sourceDirName":".","slug":"/intro","permalink":"/test-repo/docs/intro","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":1,"frontMatter":{"sidebar_position":1},"sidebar":"tutorialSidebar","next":{"title":"Tutorial - Basics","permalink":"/test-repo/docs/category/tutorial---basics"}}');
+;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-intro-mdx-f84.json
+const site_docs_intro_mdx_f84_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"intro","title":"Tutorial Intro","description":"AAA foo bar","source":"@site/docs/intro.mdx","sourceDirName":".","slug":"/intro","permalink":"/test-repo/docs/intro","draft":false,"unlisted":false,"tags":[],"version":"current","sidebarPosition":1,"frontMatter":{"sidebar_position":1},"sidebar":"tutorialSidebar","next":{"title":"Tutorial - Basics","permalink":"/test-repo/docs/category/tutorial---basics"}}');
 // EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__(4848);
 // EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
 var lib = __webpack_require__(8453);
-;// ./docs/intro.md
+// EXTERNAL MODULE: ./src/components/live-js-editor.js
+var live_js_editor = __webpack_require__(9662);
+;// ./docs/intro.mdx
 
 
 const frontMatter = {
@@ -34,6 +36,7 @@ const contentTitle = 'Tutorial Intro';
 const assets = {
 
 };
+
 
 
 
@@ -83,17 +86,17 @@ function _createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "getting-started",
       children: "Getting Started"
-    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-      children: ["Get started by ", (0,jsx_runtime.jsx)(_components.strong, {
-        children: "creating a new site"
-      }), "."]
-    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "AAA_CODE_START"
+    }), "\n", (0,jsx_runtime.jsx)(live_js_editor/* default */.A, {}), "\n", (0,jsx_runtime.jsx)(_components.pre, {
       children: (0,jsx_runtime.jsx)(_components.code, {
         className: "language-js",
         metastring: "live",
         live: true,
-        children: "\n//import * as myModule from './dist/my-module.js';\n\nfunction Clock(props) {\n\n  return (\n    <div>\n      <h2>It is fooBar.</h2>\n    </div>\n  );\n}\n"
+        children: "\n//import * as myModule from './dist/my-module.js';\n\n//const div = document.createElement('div');\n//alert('AAA');\n"
       })
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: "AAA_CODE_END"
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: ["Or ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "try Docusaurus immediately"
@@ -274,6 +277,21 @@ function MDXProvider(properties) {
   )
 }
 
+
+/***/ }),
+
+/***/ 9662:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   A: () => (/* binding */ LiveJsEditor)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(6540);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(4848);
+function LiveJsEditor(){const outputRef=(0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)();function runCode(code){try{// Minimal sandbox: never use eval like this in production!
+// For real use, use an iframe sandbox or something like sandpack.
+// eslint-disable-next-line no-eval
+const result=eval(code);outputRef.current.textContent=result;}catch(e){outputRef.current.textContent=e.toString();}}return/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div",{children:[/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("textarea",{id:"js-input",rows:8,cols:40,defaultValue:'console.log("Hello, world!")'}),/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("button",{onClick:()=>{const code=document.getElementById('js-input').value;runCode(code);},children:"Run"}),/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("pre",{ref:outputRef})]});}
 
 /***/ })
 
